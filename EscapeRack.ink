@@ -1,5 +1,5 @@
 LIST artifacts = sword, BuggyBlade
-LIST inventory = (sword)
+LIST inventory = sword
 
 -> Artifact1Choice
 
@@ -59,8 +59,7 @@ As I get closer, I hear a whisper, "Bear me child, and you will invincible... on
 
 * Leave the trident behind
 I'm a pirate, a beast bred for the sea. Such a beast can never flourish if he dies from thriving in it.
--> NextPlaceholder
-* Take the trident
+-> Artifact3Choice
 -> Artifact2_0
 
 == Artifact2_0 ==
@@ -121,6 +120,84 @@ How dare they! I had accepted them as brothers and this is what they do. With gr
 Now, the Skull & Bones are next. I kill every human I face in my path to the captain Alex Jones's quarters. I stumble over the vice captain in the path and kill him. Before I can open the captain’s door, the ship splits in half and I fall into the ocean. It feels like every single part of my body is being split and I scream in pain.
 
 <b><em>You died a very painful death and dissolved into ocean water.</em></b>
+-> END
+
+
+== Artifact3Choice ==
+As I sneak through the Skull and Jones, I find a small room. With my experience, it seems like every room in this bastard's ship has a mythical treasure hidden inside. <b>Should I check out the room?</b>
+
+* It's just another room, let it be
+-> NextPlaceholder
+
+* I feel like this room is something special, I'll check it out
+-> Artifact3_0
+
+== Artifact3_0 ==
+As I enter the room, I found an old lady tied by rope to a rod. When we sees me, she loudly begs "Help me". She's being too loud! <b>What should I do?</b>
+
+* Kill her
+I stab her with my {inventory ? BuggyBlade:bloodstained blade|sword} in her heart, she's dead. I'm disappointed there was just an old lady there. Oh well.
+-> NextPlaceholder
+
+* Release her
+-> Artifact3_1
+
+VAR killed_priestess = false
+
+== Artifact3_1 ==
+"Thank you my savior", she says. 
+"It's fine. Why were you stuck here?", I replies.
+"I used to be the priestess of Selene, I was captured in a raid.", she replies.
+"Why did they keep you alive?", I ask.
+"I owned the scepter of Selene", she replies.
+
+I become absolutely baffled from her statement. The sacred scepter of Selene is a legendary artifact is an extremely holy artifact. Romulus and Remus, the first kings of Rome were born from Selene. As such, the sacred scepter's owner can challenge the king for the right to the throne. With this artifact, I can rule the great empire!
+
+"Where is it?" I ask. 
+"It was taken by three dudes, their names were Jonny, Honny, Konny from what I heard", she replies.
+"Thank you for letting me escape", she says before getting out of the room.
+
+It might be better to kill her, it knows I'm here. However, she has provided me with the chance for the artifact, <b>what should I do?</b>
+
+* Kill her
+Before she can get away, I stab her with my {inventory ? BuggyBlade:bloodstained blade|sword} in her back. 
+"Why lord!" she asks. "You know too much", I reply. She dies.
+
+~ killed_priestess = true
+-> Artifact3_2
+
+* Let her be
+She's done enough. I'll let her be.
+-> Artifact3_2
+
+== Artifact3_2 ==
+<b>Who should I pick?</b>
+* Jonny 
+-> Artifact3_Jonny
+* Honny 
+
+{ killed_priestess:
+	-> Artifact3_Honny
+- else:
+    -> Artifact3_Hunt
+}
+* Konny 
+-> Artifact3_Konny
+
+== Artifact3_Jonny ==
+// No artifact, is strong. Can't kill physically, distract him.
+-> Artifact3_2
+
+== Artifact3_Honny ==
+// Has artifact, is weak. Can kill him physically.
+-> NextPlaceholder
+
+== Artifact3_Konny ==
+// No artifact, is strong. Can't kill him physically, wait till sleep.
+-> Artifact3_2
+
+== Artifact3_Hunt ==
+//  Add an escape subplot where the user just ends up with death.
 -> END
 
 
