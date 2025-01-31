@@ -707,11 +707,12 @@ How should I go about confronting James?
 		-- “Captain Sparrow?! But how? Your ship is at the bottom of the sea! I saw to it personally!”
 		-- “And I have come to make sure you face justice for what you did. Prepare to pay with your life!”
 		-> final_battle
+		
 ===final_battle===
 My sword clashes repeatedly with James’s. I’ve done this before, but this feels especially tense. I have to win. Not just for me…but for my crew, both new members and old!
 Suddenly, I see an opening. What should I do?
 	* [Strike him dead!]
-        -- I stab James in the chest. He freezes shortly, then drops to the floor. He says to me one last ominous phrase:
+		-- I stab James in the chest. He freezes shortly, then drops to the floor. He says to me one last ominous phrase:
 		-- “You’ll never defeat Jones. Even with his entire crew by your side…you’ll never win. You’ll…always be…a second-rate…land…lubber…” Then James breathed his last.
 		-- The crew initially stood, in silence. The fighting had stopped instantly. The crew seemed afraid, and stared in horror at my deed.
 		-> epilogueDeath
@@ -719,9 +720,9 @@ Suddenly, I see an opening. What should I do?
 	* [Strike his hand!]
 		-- I struck his hand. His sword flew out of it and into the sea. Unarmed, he sat down and put his hands up.
 		-- “Men! Throw this scoundrel in the brig!”
-		-- They did as I said, carrying James off. As he was dragged away, James said one last thing, ominous threatening…
+		-- They did as I said, carrying James off. As he was dragged away, James said one last, ominously threatening thing…
 		-- “You’ll never defeat Jones! Even with his entire crew by your side, you’ll never win! You’ll always be a second-rate landlubber…nothing more!”
-		-- The crew cheered. “James is dead! We’ve won!”
+		-- The crew cheered. “James is defeated! We’ve won!”
 		-- I believe my new crew has come to hold me in quite high regard. I imagine my decision not to kill James has resonated with the crew.
 		-> epilogue
 
