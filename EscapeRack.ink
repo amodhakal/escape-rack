@@ -1,6 +1,6 @@
 // Escape Rack Sparrow Script for Ink Game Engine
 
-VAR hasCrewLoyal = false // This will change to true depending on decisions, this variable will determine if you survive in certain endings.
+VAR hasCrewLoyal = true // This will change to true depending on decisions, this variable will determine if you survive in certain endings.
 
 -> start
 
@@ -20,12 +20,7 @@ You grip the ship’s wheel tightly, scanning the carnage around you. Despite th
 I’ll introduce me crew to ya. First off is me first mate, Ribbs! Then we have me lookout, Eagle Eye; me navigator, Clark; me cook, Gordon; me gunners, Murphy and Sheldon; and me cabin boy, Jimmy. Together, we be the glorious crew of the Wolf’s Wrath, and the greatest pirates there be on the seven seas! // (This dialogue will be used later in an organic way, not at the beginning)
 
 But we’ve got no time for long introductions, because—
-
-* [What’s happening, Cap’n?]
-    -> under_attack
-* [Keep explaining the crew.]
-    I could go on about the crew all day, but we’ve got trouble!
-    -> under_attack
+-> under_attack
 
 === under_attack ===
 // Scene: Under attack!
@@ -54,12 +49,7 @@ We were safely on the boats. Unfortunately, our old ship, the Wolf’s Wrath, wa
 
 He was right. We escaped the Wolf’s Wrath with nothing but our lives.
 
-What should I do?
-* [Pursue the Skull and Jones!]
-	->pursue_enemy
-* [Do nothing and hope we wash ashore soon.]
-	-- What?! We can’t do that! There’s only one thing we can do…
-	->pursue_enemy
+->pursue_enemy
 
 === strike_back ===
 “The Wolf’s Wrath shall not sink today! Man the cannons!”
@@ -122,6 +112,10 @@ We rowed our small boats frantically toward the monstrous ship in the distance. 
 
 We gradually approached the enemy ship. Our dinghies were like ants compared to the Skull and Jones, so we had a good chance of approaching without being noticed.
 
+-> choose_option
+
+== choose_option ==
+
 But that also brings up another question: how can we board the ship?
 	* [Grab hold of the anchor!]
 		-- I grabbed the anchor.
@@ -131,7 +125,8 @@ But that also brings up another question: how can we board the ship?
 	* [Break in through a cabin window!]
 		--Jimmy asked if we should go through the windows. But Sheldon reminded him we were unarmed, and simply pounding on the windows would blow our cover.
 		--We should try something else.
-		->END
+		-> choose_option
+		
 	* [Climb the ropes to the main deck!]
 		-- We decided to climb the ropes to the main deck.
 		-- But we certainly couldn’t all board at once. Jones’s crew would notice!
@@ -290,7 +285,7 @@ It feels like every single part of my body is being split and I scream in pain.
 * Kill my own crew
 How dare they! I had accepted them as brothers and this is what they do. With great anger, I go through the entire crew with my trident and {inventory ? BuggyBlade:bloodstained blade|sword}.
 
-Now, the Skull & Bones are next. I kill every human I face in my path to the captain Alex Jones's quarters. I stumble over the vice captain in the path and kill him. Before I can open the captain’s door, the ship splits in half and I fall into the ocean. It feels like every single part of my body is being split and I scream in pain.
+Now, the Skull & Jones are next. I kill every human I face in my path to the captain Alex Jones's quarters. I stumble over the vice captain in the path and kill him. Before I can open the captain’s door, the ship splits in half and I fall into the ocean. It feels like every single part of my body is being split and I scream in pain.
 
 <b><em>You died a very painful death and dissolved into ocean water.</em></b>
 -> END
@@ -407,7 +402,12 @@ The Skull and Jones is vast, but every moment you linger, the risk of getting ca
 === lifeboat_escape ===
 You move swiftly through the dimly lit corridors, avoiding the loudest parts of the ship. Near the stern, you spot a lifeboat hanging over the water. Carefully, you begin untying the ropes.
 Just as you lower yourself into the boat, a shadow looms over you. A deckhand stares at you, eyes narrowing.
-* [Jump into the boat]
+* [Jump into the boat.]
+I leave one of my crew members behind. We can't afford the time to have him join use
+~ hasCrewLoyal = false
+-> boat_escape
+* [Have my crew jump into the boat first, then me]
+A captain should never abandon their comrades.
 -> boat_escape
 
 === boat_escape ===
@@ -590,7 +590,8 @@ With both a pistol and a key by your side, you quietly rush into the cargo hold,
 === CargoAttackWeaponKey === 
 Wasting no time, you use your pistol to shoot the rival pirates. With a key already in hand, you quickly notice a pouch of gold on each of their bodies, and steal both of them. Then, you unlock the door, which leads to a deck, which leads to a small but spacious boat outside.
 “Easy gold, easy escape” You whisper as you steal the boat and sail into the sunset.
-TODO: Add the printing of the artifacts collected
+
+<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
 -> END
 
 === LockedDoorEscape ===
