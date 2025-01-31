@@ -711,10 +711,11 @@ How should I go about confronting James?
 My sword clashes repeatedly with James’s. I’ve done this before, but this feels especially tense. I have to win. Not just for me…but for my crew, both new members and old!
 Suddenly, I see an opening. What should I do?
 	* [Strike him dead!]
-		-- I strike James on the neck. I slit his throat, and he drops to the floor. He says to me one last ominous phrase:
+        -- I stab James in the chest. He freezes shortly, then drops to the floor. He says to me one last ominous phrase:
 		-- “You’ll never defeat Jones. Even with his entire crew by your side…you’ll never win. You’ll…always be…a second-rate…land…lubber…” Then James breathed his last.
-		-- The crew initially stood, in silence. The fighting had stopped instantly. The crew seemed afraid, but soon celebrated. “James is dead! We’ve won!”
-		-> epilogue
+		-- The crew initially stood, in silence. The fighting had stopped instantly. The crew seemed afraid, and stared in horror at my deed.
+		-> epilogueDeath
+		
 	* [Strike his hand!]
 		-- I struck his hand. His sword flew out of it and into the sea. Unarmed, he sat down and put his hands up.
 		-- “Men! Throw this scoundrel in the brig!”
@@ -735,6 +736,16 @@ Suddenly, I see an opening. What should I do?
 </b>
 
 -> END
+
+=== epilogueDeath ===
+Dismayed by the death of their ship’s first mate, your “new crew” turns to you in disgust.
+“This mutiny ain’t over!”
+Before your loyal crewmates can respond, members of your new crew take turns stabbing you in the gut, painfully ending your life.
+“Some captain I turned out to be.” That was my final thought as I bled out.
+-> END
+
+
+
 
 
 
