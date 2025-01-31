@@ -429,7 +429,10 @@ You grip the oars and row frantically, ignoring the pain in your arms as gunfire
 As the battle fades behind you, the weight of the stolen gold in your pockets reassures you—you've made it out alive, and rich.
 
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 -> END
 
 === frantic_row ===
@@ -462,7 +465,10 @@ You toss the crew member a heavy pouch of gold. His eyes gleam as he pockets the
 You nod, climb aboard, and row into the night. The Skull and Jones fades into the mist as you escape with your treasure.
 
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 -> END
 
 
@@ -498,18 +504,18 @@ They shuffle around, oblivious to your presence. Once they leave, you exhale and
 You creep toward the armory, slipping past an unaware guard. Inside, racks of knives, pistols, muskets, and ammo decorate the walls.
 You quickly grab a pistol and a musket, and as much ammo as you can carry. 
 As you're about to leave, you spot a stack of keys hanging on the wall. If you grab them, you might be able to unlock something important later.
-[Take the keys.]
+* [Take the keys.]
 -> key_loot
-[Ignore the keys and leave before someone finds you.]
+* [Ignore the keys and leave before someone finds you.]
 -> cargo_escape_weapon
 
 === key_loot ===
 You snatch the keys, hoping they unlock something valuable. Just as you turn to leave, a voice calls out behind you.
 "Oi! What are you doin’ in here?"
 A pirate stands in the doorway, reaching for his sword. You have only seconds to act.
-[Shoot him]
+* [Shoot him]
 -> quick_shoot
-[Knock him out with the musket]
+* [Knock him out with the musket]
 -> musket_knockout
 
 === quick_shoot ===
@@ -556,7 +562,10 @@ Taking advantage of the barely conscious, drunk pirate, you quickly stab his sob
 You notice a key on each of their bodies and you use them to unlock the door, which leads to a deck, which leads to a small but spacious boat outside.
 “Freedom,” you whisper as you untie the boat with your loot, escaping from the Skull and Jones.
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 -> END
 === DrinkFail ===
 “Wait a minute, who the hell are you?!” The sober pirate exclaims.
@@ -580,7 +589,10 @@ Pistol in hand, you quietly rush into the cargo hold, which smells of rum and go
 Wasting no time, you use your pistol to shoot the rival pirates. Noticing a key on each of their bodies, you use them to unlock the door, which leads to a deck, which leads to a small but spacious boat outside.
 “Freedom,” you whisper as you untie the boat with your loot, escaping from the Skull and Jones.
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 -> END
 ===  cargo_escape_weaponkey ===
 With both a pistol and a key by your side, you quietly rush into the cargo hold, which smells of rum and gold. You observe multiple pirates trying to get access to the rum, and a door with a lock on it. 
@@ -591,20 +603,29 @@ With both a pistol and a key by your side, you quietly rush into the cargo hold,
 Wasting no time, you use your pistol to shoot the rival pirates. With a key already in hand, you quickly notice a pouch of gold on each of their bodies, and steal both of them. Then, you unlock the door, which leads to a deck, which leads to a small but spacious boat outside.
 “Easy gold, easy escape” You whisper as you steal the boat and sail into the sunset.
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 -> END
 
 === LockedDoorEscape ===
 You quickly unlock the door, avoiding the attention of the guards. The door leads to a deck, which leads to a small but spacious boat outside.
 “All too easy.” you whisper as you untie the boat with your loot, escaping from the Skull and Jones.
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 -> END
 === lifeboat_dive ===
 You leap off the side of the ship, crashing into the cold ocean. You swim toward a small lifeboat floating nearby, hoisting yourself aboard. The enemy crew shouts behind you, but the Skull and Jones is too slow to turn around.
 You've done it! You row into the night, the weight of your gold ensuring your future as a rich and free pirate.
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 -> END 
 
 === fight_escape ===
@@ -708,7 +729,10 @@ Suddenly, I see an opening. What should I do?
 	- “Aye-aye, Cap’n!” uttered the crew, both old and new.
 - I now have a ship once more and a crew that respects me. It’s time to finish this! Jones…I will find you. And I will teach you not to mess with Captain Rack Sparrow! AAAAARRRRGH!
 
-<b>Congrats, you ended up with {inventory has BuggyBlade: Buggy's Bloodstained Blade} and {inventory has SacredSceptre: Selene's Sacred Sceptre}</b>
+<b>
+{inventory has BuggyBlade: Congrats, you ended up with Buggy's Bloodstained Blade.}
+{inventory has SacredSceptre: Congrats, you ended up with Selene's Sacred Sceptre.}
+</b>
 
 -> END
 
