@@ -421,7 +421,7 @@ Finally, the rope gives way, and the lifeboat drops into the water with a loud s
 You hear a battle cry  as your loyal crew, hidden among the enemy ranks, turns against them. 
 "FOR THE CAP'N!" Ribbs shouts, tackling a musketeer before he can fire.
 With the enemy distracted, you see your two real options for escape:
-[Row as fast as possible before they recover.]
+* [Row as fast as possible before they recover.]
 -> row_escape
 
 === row_escape ===
@@ -478,7 +478,7 @@ You smirk. You’ve come this far, why stop now? There are still more riches to 
 You sneak into what appears to be the captain’s quarters. A large, gilded chest sits before you. As you pry it open, you hear voices approaching.
 * [Grab what you can and bolt.]
 -> rushed_escape
-*[Hide and wait for an opportunity.]
+* [Hide and wait for an opportunity.]
 -> hide_escape
 
 === rushed_escape ===
