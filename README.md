@@ -7,11 +7,11 @@ An interactive game built with Inky game engine. Your enemy Alex Jones and his c
 I had difficulty coming up with artifact names. I want the names to sound unique while also being an alliteration. I used Claude 3.5 Sonnet as the AI on Jan. 28 on Tuesday.
 
 I replaced Blackbeard's bloodstained Behemoth with Buggy's Bloodstained Blade, because blade is more a common word and Buggy is a
-pirate for my favorite anime, One Piece. 
+pirate from my favorite anime, One Piece. 
 
 I replaced Terrible Tom's thundering trident with Triton's Tainted Trident because I wanted
 the trident to be cursed, tainted. When thinking of the backstory, I came up with idea of Poseidon and his son Triton as the characters
-which perfectly for the alliteration.
+which perfectly fits the alliteration.
 
 I replaced Salty Sam's sacred scepter to Selene's Sacred Scepter. The use of scared and scepter reminds me of divinity, so I tied the 
 artifact to the goddess Selene from greek mythology. She's the goddess of the moon which I plan on incorporating in my lore and powers.
