@@ -72,6 +72,7 @@ These are more specific, with each treasure having its own mythical or magical q
 supposed powers or history, or create more combinations with different magical artifacts?
 
 **I want like Blackbeard's but more ominous and legendary**
+
 How aboutchese more ominous and legendary combinations:
 
 - Blackbeard's baleful banshee-stone
